@@ -1,0 +1,26 @@
+{
+  "name": "mnevo-micro",
+  "version": "0.0.0",
+  "description": "microservices backend for \"Mnemonic Vocabulary\" application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grenudi/mnevo-micro.git"
+  },
+  "keywords": [
+    "mnevo",
+    "mnemonic",
+    "vocabulary",
+    "microservices",
+    "backend"
+  ],
+  "author": "grenudi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grenudi/mnevo-micro/issues"
+  },
+  "homepage": "https://github.com/grenudi/mnevo-micro#readme"
+}
