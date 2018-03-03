@@ -4,7 +4,21 @@
   "description": "microservices backend for \"Mnemonic Vocabulary\" application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc mocha ./tests/*",
+    "start": "node initiator.js",
+    "dev": "nodemon initiator.js"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul"
+        ]
+      }
+    }
   },
   "repository": {
     "type": "git",
@@ -22,5 +36,22 @@
   "bugs": {
     "url": "https://github.com/grenudi/mnevo-micro/issues"
   },
-  "homepage": "https://github.com/grenudi/mnevo-micro#readme"
+  "homepage": "https://github.com/grenudi/mnevo-micro#readme",
+  "dependencies": {
+    "seneca": "^3.4.3"
+  },
+  "engines": {
+    "node": ">= 8.9.4",
+    "npm": ">= 5.6.0"
+  },
+  "devDependencies": {
+    "babel-plugin-istanbul": "^4.1.5",
+    "chai": "^4.1.2",
+    "eslint": "^4.18.1",
+    "eslint-config-node": "^2.0.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-require-path-exists": "^1.1.7",
+    "mocha": "^5.0.1",
+    "nyc": "^11.4.1"
+  }
 }
