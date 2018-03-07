@@ -32,6 +32,7 @@ module.exports = {
             "error",
             "double"
         ],
+        "no-unused-vars": 1,
         "semi": 1,
         "import/no-commonjs": 0,
         "import/no-nodejs-modules": 0,
