@@ -1,3 +1,8 @@
+const Chai = require("chai");
+const initiator = require("../src/initiator");
+
 describe("initiator", () => {
-  it("")
+    it("intiator have the takeoff",()=>{
+        Chai.expect(initiator.takeoff).to.be.a("function");
+    });
 });
